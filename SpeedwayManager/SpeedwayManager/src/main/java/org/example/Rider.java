@@ -39,11 +39,14 @@ public class Rider {
                 ", SGPNumber=" + SGPNumber +
                 ", abilities=" + abilities +
                 '}';*/
-        return "\n" + name + " " + surname + "\n" +
+
+        /*return "\n" + name + " " + surname + "\n" +
                 "\tNumber: " + SGPNumber + "\n" +
                 "\tAbilities: " + abilities + "\n" +
                 "\tFrom: " + nationality + "\n" +
-                "\tBorn:" + getFormattedDate() ;
+                "\tBorn:" + getFormattedDate() ;*/
+
+        return nationality + " " + name + " " + surname + " (" + abilities + ")" + "\n";
     }
 
     public int getAge() {

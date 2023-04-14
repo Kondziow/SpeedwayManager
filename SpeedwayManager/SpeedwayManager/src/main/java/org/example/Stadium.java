@@ -13,10 +13,13 @@ public class Stadium {
 
     @Override
     public String toString() {
-        return "Stadium{" +
+        /*return "Stadium{" +
                 name + " " + city +
                 ", " + capacity + " capacity" +
-                '}';
+                '}';*/
+        return "Stadium:\n" +
+                name + " " + city +
+                ", " + capacity + " capacity";
     }
 
     public String getName() {
