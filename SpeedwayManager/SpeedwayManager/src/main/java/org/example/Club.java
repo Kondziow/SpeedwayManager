@@ -11,6 +11,9 @@ public class Club {
     private Stadium stadium;
     private List<Rider> riders;
 
+    public void addRider(Rider rider){
+        riders.add(rider);
+    }
     @Override
     public String toString() {
         /*return "Club{\n" +
@@ -23,7 +26,7 @@ public class Club {
         for(var rider : riders){
             clubRiders +=rider.toString();
         }
-        return name + ":\n" +
+        return name + city + ":\n" +
                 stadium +
                 "\nRiders:\n" + clubRiders;
     }

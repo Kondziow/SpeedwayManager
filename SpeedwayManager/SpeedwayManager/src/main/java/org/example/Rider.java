@@ -7,10 +7,10 @@ public class Rider {
     private String surname;
     private String nationality;
     private Date dateOfBirth;
-    private int SGPNumber;
+    private Integer SGPNumber;
     private int abilities;
 
-    public Rider(String name, String surname, String nationality, Date dateOfBirth, int SGPNumber, int abilities) {
+    public Rider(String name, String surname, String nationality, Date dateOfBirth, Integer SGPNumber, int abilities) {
         this.name = name;
         this.surname = surname;
         this.nationality = nationality;
@@ -19,7 +19,7 @@ public class Rider {
         this.abilities = abilities;
     }
 
-    public String getFormattedDate(){
+    public String getFormattedDateOfBirth(){
         String day = String.valueOf(dateOfBirth.getDay());
         String month = String.valueOf(dateOfBirth.getMonth());
         String year = String.valueOf(dateOfBirth.getYear());

@@ -18,8 +18,7 @@ public class Stadium {
                 ", " + capacity + " capacity" +
                 '}';*/
         return "Stadium:\n" +
-                name + " " + city +
-                ", " + capacity + " capacity";
+                name + ", " + capacity + " capacity";
     }
 
     public String getName() {
