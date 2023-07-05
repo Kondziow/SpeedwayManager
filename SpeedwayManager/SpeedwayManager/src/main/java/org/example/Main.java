@@ -9,9 +9,13 @@ import java.util.*;
 public class Main {
     private static int season = 2023;
     public static List<Club> clubs = new ArrayList<>();
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         readData();
+        System.out.println(clubs.get(1).getRiders().get(0));
+        Heat heat = new Heat(1, clubs.get(0).getRiders().get(0), clubs.get(1).getRiders().get(0), clubs.get(0).getRiders().get(1), clubs.get(1).getRiders().get(1));
+        heat.startHeat();
+        System.out.println(clubs.get(1).getRiders().get(0));
     }
     private static void readData(){
         String filePath = "Riders.txt";
@@ -50,7 +54,7 @@ public class Main {
                     }
                 }
                 clubs.add(club);
-                System.out.println(club);
+                //System.out.println(club);
             }
 
         } catch (IOException e) {
