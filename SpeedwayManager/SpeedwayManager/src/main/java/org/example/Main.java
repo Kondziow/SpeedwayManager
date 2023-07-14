@@ -1,9 +1,6 @@
 package org.example;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 
 public class Main {
@@ -12,10 +9,11 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
 
         readData();
-        System.out.println(clubs.get(1).getRiders().get(0));
+        /*System.out.println(clubs.get(1).getRiders().get(0));
         Heat heat = new Heat(1, clubs.get(0).getRiders().get(0), clubs.get(1).getRiders().get(0), clubs.get(0).getRiders().get(1), clubs.get(1).getRiders().get(1));
         heat.startHeat();
-        System.out.println(clubs.get(1).getRiders().get(0));
+        System.out.println(clubs.get(1).getRiders().get(0));*/
+        Match match = new Match(clubs.get(0), clubs.get(1));
     }
     private static void readData(){
         String filePath = "Riders.txt";
@@ -67,4 +65,5 @@ public class Main {
     public static void setSeason(int season) {
         Main.season = season;
     }
+
 }

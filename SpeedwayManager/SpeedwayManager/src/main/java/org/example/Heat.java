@@ -8,9 +8,9 @@ public class Heat {
     private int heatNumber;
     private Rider[] riders;
 
-    public Heat(int heatNumber, Rider rider1, Rider rider2, Rider rider3, Rider rider4) {
+    public Heat(int heatNumber, Rider[] riders) {
         this.heatNumber = heatNumber;
-        this.riders = new Rider[]{rider1, rider2, rider3, rider4};
+        this.riders = riders;
         this.numberOfRiders = riders.length;
     }
 
